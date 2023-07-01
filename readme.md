@@ -20,7 +20,7 @@ Usage:
       services: '["admin", "config", "home", "proxy", "server"]'
 ```
 
-The action either exits with 0, if the docker image was successfully built and deployed, or 1 if not.
+The action either exits with 0, if the io.Cloud instance was deploymed successfully, or 1 if not.
 
 **Naming Convention**
 
