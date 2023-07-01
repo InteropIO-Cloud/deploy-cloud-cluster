@@ -1,0 +1,24 @@
+name: "deploy-cloud-cluster"
+description: "Build and deploy a docker image to a registry"
+inputs:
+  working-dir:
+    description: "The current working directory"
+    required: true
+  region:
+    description: "The AWS region"
+    required: true
+  tag-name:
+    description: "The tag name of the image"
+    required: true
+  cluster-name:
+    description: "The name of the AWS EKS cluster for this instance"
+    required: true
+  services:
+    description: "A JSON stringify-able array of instance services to deploy"
+    required: true
+outputs:
+  depl-dir-name:
+    description: "The name of the deployment directory"
+runs:
+  using: "docker"
+  image: "docker://ioconnect/deploy-cloud-cluster:1.0.0"

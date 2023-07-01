@@ -1,0 +1,25 @@
+{
+  "name": "deploy-cloud-cluster",
+  "version": "0.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flashd2n/validate-cloud-release.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flashd2n/validate-cloud-release/issues"
+  },
+  "homepage": "https://github.com/flashd2n/validate-cloud-release#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.1.1",
+    "yaml": "^2.3.1"
+  }
+}
