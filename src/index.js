@@ -22,7 +22,7 @@ const updateServiceContainerImageTag = async (k8sDeployDir, serviceName, tagName
 
     const serviceYamlFile = serviceYamlFiles[0];
 
-    const file = await readFile(k8sDeployDir, serviceYamlFile, "utf8");
+    const file = await readFile(join(k8sDeployDir, serviceYamlFile), "utf8");
 
     const parsedYmlDocs = parseAllDocuments(file);
 

@@ -21,4 +21,4 @@ outputs:
     description: "The name of the deployment directory"
 runs:
   using: "docker"
-  image: "docker://ioconnect/deploy-cloud-cluster:1.0.1"
+  image: "docker://ioconnect/deploy-cloud-cluster:1.0.2"
